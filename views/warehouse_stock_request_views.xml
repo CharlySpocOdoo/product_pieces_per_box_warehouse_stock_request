@@ -7,7 +7,7 @@
         <field name="inherit_id"
                ref="warehouse_stock_request.custom_warehouse_stock_request_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='warehouse_stock_request_line_ids']/list/field[@name='product_uom']"
+            <xpath expr="//field[@name='warehouse_stock_request_line_ids']/list/field[@name='demand_qty']"
                    position="after">
                 <field name="pieces_per_box_display" string="Caja" readonly="1" optional="show"/>
             </xpath>
