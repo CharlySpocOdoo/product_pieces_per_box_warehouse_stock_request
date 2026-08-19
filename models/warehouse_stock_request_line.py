@@ -23,4 +23,4 @@ class CustomWarehouseStockRequestLine(models.Model):
             qty = 0
             if line.product_id:
                 qty = line.product_id.pieces_per_box_qty
-            line.pieces_per_box_display = 'x %s' % qty if qty else ''
+            line.pieces_per_box_display = str(qty) if qty else ''
